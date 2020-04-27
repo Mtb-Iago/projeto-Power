@@ -4,8 +4,9 @@ const routes = require('./routes'); //importando as rotas com ./ para indentific
 
 const app = express(); //app recebe express
 
-app.use(cors()); //depois coloca origin
+ 
 app.use(express.json()); //converta esse json em js>>> importante ser antes da requisição
+app.use(cors());//depois coloca origin
 app.use(routes); //app funcionando com as rotas
 
 
